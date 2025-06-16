@@ -38,3 +38,8 @@ variable "GKE_NODE_DISK_SIZE_GB" {
   default     = 100
   description = "Node disk size"
 }
+
+variable "SSD_TOTAL_GB" {
+  type        = number
+  default     = 50
+}
