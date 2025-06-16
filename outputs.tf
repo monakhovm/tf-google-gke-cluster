@@ -15,3 +15,8 @@ output "config_ca" {
 output "name" {
   value = google_container_cluster.this.name
 }
+
+output "kubeconfig" {
+  value       = "${path.module}/kubeconfig"
+  description = "The path to the kubeconfig file"
+}
